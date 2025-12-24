@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { ServiceCategory, Service, BookingDetails, Quote, Language } from './types';
 import { SERVICE_CATEGORIES } from './constants';
 import { getTranslations } from './localization';
-import Header from './components/Header';
+import header from './components/Header';
 import CategoryGrid from './components/CategoryGrid';
 import ServiceList from './components/ServiceList';
 import ServiceDetailsForm from './components/ServiceDetailsForm';
