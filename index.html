@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahtaje - Your Trusted Service Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', 'Noto Sans Arabic', sans-serif;
+      }
+      @keyframes slide-in-from-right {
+        from { transform: translateX(50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slide-out-to-left {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(-50px); opacity: 0; }
+      }
+      @keyframes slide-in-from-left {
+        from { transform: translateX(-50px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slide-out-to-right {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(50px); opacity: 0; }
+      }
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes fade-out {
+        from { opacity: 1; }
+        to { opacity: 0; }
+      }
+
+      .animate-slide-in-right { animation: slide-in-from-right 0.3s ease-out forwards; }
+      .animate-slide-out-left { animation: slide-out-to-left 0.3s ease-in forwards; }
+      .animate-slide-in-left { animation: slide-in-from-left 0.3s ease-out forwards; }
+      .animate-slide-out-right { animation: slide-out-to-right 0.3s ease-in forwards; }
+      .animate-fade-in { animation: fade-in 0.3s ease-out forwards; }
+      .animate-fade-out { animation: fade-out 0.3s ease-in forwards; }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

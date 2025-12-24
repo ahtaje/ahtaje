@@ -1,0 +1,5 @@
+{
+  "name": "Ahtaje Service Marketplace",
+  "description": "A service marketplace platform where users can request any type of service, pay in advance, and get it handled end-to-end by vetted providers selected by Ahtaje.",
+  "requestFramePermissions": []
+}
